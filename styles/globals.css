@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Base Styles for Typography */
+@layer base {
+  body {
+    @apply text-primary-dark bg-white antialiased;
+  }
+  h1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl font-bold mb-4;
+  }
+  h3 {
+    @apply text-xl font-semibold;
+  }
+  /* Style for Swiper Pagination Dots */
+  .swiper-pagination-bullet-active {
+    @apply bg-accent-blue !important;
+  }
+}
+
+/* Custom Button Component */
+@layer components {
+  .btn-primary {
+    @apply bg-accent-blue text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-accent-blue/50;
+  }
+}
